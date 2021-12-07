@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ctrlc", "ctrlc.vcxproj", "{4DA33FBF-E416-4AAE-BED0-64C2E7AEF1BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DA33FBF-E416-4AAE-BED0-64C2E7AEF1BE}.Release|x86.ActiveCfg = Release|Win32
+		{4DA33FBF-E416-4AAE-BED0-64C2E7AEF1BE}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83D1FD4F-512B-4B2F-BD8D-327FEAA2ADB8}
+	EndGlobalSection
+EndGlobal
