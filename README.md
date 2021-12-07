@@ -4,11 +4,11 @@ Helper program to terminate processes gracefully.
 
 I was making a GUI program in Python and wanted to run console apps without any window and terminate them gracefully. No big deal on Linux and Mac, you just send `SIGINT`. But Windows makes it hard. You need to create a subprocess with `CREATE_NEW_PROCESS_GROUP` flag and then you can send `CTRL_BREAK_EVENT`. But that event doesn't work with everything, you won't stop `ping` with it, you need `CTRL_C_EVENT`. But the default handler for that event is disabled when you use `CREATE_NEW_PROCESS_GROUP` flag. And if you add PyInstaller into the mix then even `CTRL_BREAK_EVENT` stops working (unless I missed some flag).
 
-You can read more about that mess here:
-https://bugs.python.org/issue33245
+You can read more about that mess here:  
+https://bugs.python.org/issue33245  
 https://bugs.python.org/issue23948
 
-Code for gracefully killing used in the example below and in `ctrlc` itself taken from:
+Code for gracefully killing used in the example below and in `ctrlc` itself taken from:  
 https://stackoverflow.com/a/60795888/2428152
 
 Below is the example use. `ctrlc.exe` is used only on Windows and if the code is frozen with PyInstaller.
